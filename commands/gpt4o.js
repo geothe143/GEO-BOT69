@@ -15,7 +15,7 @@ async function fetchAIResponse(prompt) {
 }
 
 module.exports = {
-    name: "gpt4o",
+    name: "geo",
     description: "Talk to GPT-4 without maintaining a conversation",
     nashPrefix: false,
     version: "1.0.0",
@@ -36,7 +36,7 @@ module.exports = {
                 try {
                     const response = await fetchAIResponse(prompt);
                     api.editMessage(
-                        "[ 𝙰𝙸 ]\n\n" +
+                        "🧋✨|GEO-CHAT BOT\n\n" +
                         response,
                         info.messageID
                     );
