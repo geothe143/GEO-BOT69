@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 module.exports = {
-    name: 'ai',
+    name: 'juv',
     description: 'Interact with GPT-3.5 Turbo',
     cooldown: 3,
     nashPrefix: false,
