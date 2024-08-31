@@ -28,8 +28,8 @@ module.exports = {
         if (!prompt) return api.sendMessage("Please enter a prompt.", threadID, messageID);
 
         api.sendMessage(
-            "[ 𝙰𝙸 ]\n\n" +
-            "⏳ Please wait...",
+            "🧋✨|GEO-CHAT BOT\n\n" +
+            "⏳ Responding...",
             threadID,
             async (err, info) => {
                 if (err) return;
