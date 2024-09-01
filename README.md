@@ -8,20 +8,20 @@
 </div>
 
 <div align="center">
-  <h2><strong>🧋✨|GEO-CHAT BOT</strong></h2>
+  <h2><strong>🧋✨|«𝗚𝗘𝗢 𝗔𝗜69»</strong></h2>
 </div>
 
 <div align="center">
-  <p>Welcome to 🧋✨|GEO-CHAT BOT - your ultimate companion for managing Facebook group chats with ease!</p>
+  <p>Welcome to🧋✨|«𝗚𝗘𝗢 𝗔𝗜69» - your ultimate companion for managing Facebook group chats with ease!</p>
 </div>
 
 ## Features:
 
-- **Automated Greetings:** 🧋✨|GEO-CHAT BOT welcomes new members joining your group chats, making everyone feel at home.
+- **Automated Greetings:** 🧋✨|«𝗚𝗘𝗢 𝗔𝗜69» welcomes new members joining your group chats, making everyone feel at home.
 - **Custom Commands:** Easily create and customize your own commands to interact with the bot and perform various tasks.
-- **Dynamic Prefix:** 🧋✨|GEO-CHAT BOT adapts to your preferred command prefix, making it convenient to use according to your preferences.
-- **User-friendly Interface:** With a sleek design and intuitive commands, 🧋✨|GEO-CHAT BOT offers a seamless user experience.
+- **Dynamic Prefix:** 🧋✨|«𝗚𝗘𝗢 𝗔𝗜69» adapts to your preferred command prefix, making it convenient to use according to your preferences.
+- **User-friendly Interface:** With a sleek design and intuitive commands,🧋✨|«𝗚𝗘𝗢 𝗔𝗜69» offers a seamless user experience.
 - **Command Listing:** Quickly browse through available commands and their descriptions to maximize your bot experience.
 - **Active Session Tracking:** Stay informed about the number of active bot sessions, ensuring smooth operation at all times.
 
-Get started with 🧋✨|GEO-CHAT BOT today and elevate your Facebook group chat experience to new heights!
+Get started with 🧋✨|«𝗚𝗘𝗢 𝗔𝗜69» today and elevate your Facebook group chat experience to new heights!
