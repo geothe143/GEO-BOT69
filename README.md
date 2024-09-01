@@ -24,4 +24,4 @@
 - **Command Listing:** Quickly browse through available commands and their descriptions to maximize your bot experience.
 - **Active Session Tracking:** Stay informed about the number of active bot sessions, ensuring smooth operation at all times.
 
-Get started with NASH BOT today and elevate your Facebook group chat experience to new heights!
+Get started with 🧋✨|GEO-CHAT BOT today and elevate your Facebook group chat experience to new heights!
