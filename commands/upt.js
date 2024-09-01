@@ -25,6 +25,7 @@ function generateStatusMessage() {
   const cpuArchitecture = os.arch();
 
   return `BOT has been working for ${hours} hour(s) ${minutes} minute(s) ${seconds} second(s).\n\n` +
+    `❖ Owner: ${George•Nakila}\n` +
     `❖ Cpu usage: ${cpuUsage}%\n` +
     `❖ RAM usage: ${ramUsage} MB\n` +
     `❖ Cores: ${cores}\n` +
