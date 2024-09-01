@@ -16,7 +16,7 @@ module.exports = {
         pageNumber = isNaN(pageNumber) || pageNumber < 1 ? 1 : pageNumber;
 
         let commandList = "╔════ஜ۩۞۩ஜ═══╗\n\n";
-        commandList += `COMMAND LIST - PAGE 1,2,3 ${pageNumber}:\n\n`;
+        commandList += `𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧 » 𝗣𝗔𝗚𝗘 1,2,3 ${pageNumber}:\n\n`;
 
         const commandEntries = Array.from(commands.keys());
         const eventEntries = Array.from(events.keys());
@@ -30,13 +30,13 @@ module.exports = {
 
         paginatedEntries.forEach(name => {
             if (commandEntries.includes(name)) {
-                commandList += `❍ ${name}\n`;
+                commandList += `♲︎︎︎ ${name}\n`;
             } else if (eventEntries.includes(name)) {
                 if (isCommandSection) {
                     commandList += "\nEvent List:\n";
                     isCommandSection = false;
                 }
-                commandList += `❍ ${name}\n`;
+                commandList += `♲︎︎︎ ${name}\n`;
             }
         });
 
@@ -44,7 +44,7 @@ module.exports = {
             commandList += "\nNo more commands/events.";
         }
 
-        commandList += `\n\n𝑱𝒖𝒔𝒕 𝒎𝒆𝒔𝒔𝒶𝑔𝒺 𝒽𝒺𝓁𝓅 1, 2, 𝑜𝓇 3 𝓉𝑜 𝓈𝑒𝑒 𝓂𝑜𝓇𝑒 𝒸𝑜𝓂𝒶𝓃𝒹𝓈\n`;
+        commandList += `\n\n| Help 1 | Help 2 | Help 3 |\n`;
         commandList += `╚════ஜ۩۞۩ஜ═══╝`;
         api.sendMessage(commandList, threadID, messageID);
     }
