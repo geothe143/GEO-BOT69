@@ -28,7 +28,7 @@ module.exports = {
         if (!prompt) return api.sendMessage("Please enter a prompt.", threadID, messageID);
 
         api.sendMessage(
-            "✴✶ 🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜 🎀 ✶✴\n\n" +
+            "🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n\n" +
             "⏳ Responding...",
             threadID,
             async (err, info) => {
@@ -36,7 +36,7 @@ module.exports = {
                 try {
                     const response = await fetchAIResponse(prompt);
                     api.editMessage(
-                        "✴✶ 🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜 🎀 ✶✴\n\n" +
+                        "🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n\n" +
                         response,
                         info.messageID
                     );
