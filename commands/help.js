@@ -16,7 +16,7 @@ module.exports = {
         pageNumber = isNaN(pageNumber) || pageNumber < 1 ? 1 : pageNumber;
 
         let commandList = "╔════ஜ۩۞۩ஜ═══╗\n\n";
-        commandList += `𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧 » 𝗣𝗔𝗚𝗘 1,2,3 ${pageNumber}:\n\n`;
+        commandList += `𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧 » 𝗣𝗔𝗚𝗘 ${pageNumber}:\n\n`;
 
         const commandEntries = Array.from(commands.keys());
         const eventEntries = Array.from(events.keys());
@@ -44,7 +44,7 @@ module.exports = {
             commandList += "\nNo more commands/events.";
         }
 
-        commandList += `\n\n| Help 1 | Help 2 | Help 3 |\n`;
+        commandList += `\n\n|Help 1|Help 2|Help 3|\n`;
         commandList += `╚════ஜ۩۞۩ஜ═══╝`;
         api.sendMessage(commandList, threadID, messageID);
     }
