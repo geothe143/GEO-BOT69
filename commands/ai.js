@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 module.exports = {
-    name: 'juv',
+    name: 'Hi',
     description: 'Interact with GPT-3.5 Turbo',
     cooldown: 3,
     nashPrefix: false,
@@ -13,7 +13,7 @@ module.exports = {
             return api.sendMessage('Please enter a prompt.', event.threadID, event.messageID);
         }
 
-        api.sendMessage('Processing your request...', event.threadID, event.messageID);
+        api.sendMessage('💬Responding...', event.threadID, event.messageID);
 
         try {
             const response = await axios.get(`${global.NashBot.END}new/gpt-3_5-turbo?prompt=${encodeURIComponent(input)}`);
@@ -24,7 +24,7 @@ module.exports = {
             }
 
             api.sendMessage(
-                `🧋✨|GEO-CHAT BOT\n━━━━━━━━━━━━━━━━━━━\n${result}`,
+                `🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n━━━━━━━━━━━━━━━━━━━\n${result}`,
                 event.threadID,
                 event.messageID
             );
