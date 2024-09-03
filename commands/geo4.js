@@ -29,7 +29,7 @@ module.exports = {
         if (!message) return api.sendMessage("Please provide your question.\n\nExample: ai What is the solar system?", threadID, messageID);
 
         api.sendMessage(
-            "🔎 Searching for an answer. Please wait...",
+            "💬 Responding...",
             threadID,
             async (err, info) => {
                 if (err) return;
