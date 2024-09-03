@@ -11,7 +11,7 @@ async function aic(q, uid) {
 }
 
 module.exports = {
-    name: "ai2",
+    name: "Hi2",
     description: "Talk to GPT4 (conversational)",
     nashPrefix: false,
     version: "1.0.2",
@@ -31,8 +31,8 @@ module.exports = {
         }
 
         api.sendMessage(
-            "[ 𝙲𝙾𝙽𝚅𝙴𝚁𝚂𝙰𝚃𝙸𝙾𝙽𝙰𝙻 𝙰𝙸 ]\n\n" +
-            "⏳ Searching for answer..." +
+            "🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n\n" +
+            "⏳ Responding..." +
             '\n\n[ 𝚃𝚢𝚙𝚎 "𝚌𝚕𝚎𝚒𝚛" 𝚝𝚘 𝚛𝚎𝚜𝚎𝚝 𝚝𝚑𝚎 𝚌𝚘𝚗𝚟𝚎𝚛𝚜𝚎𝚜𝚜𝚒𝚘𝚟𝚎 𝚠𝚒𝚝𝚑 𝙰𝙸 ]',
             threadID,
             async (err, info) => {
@@ -40,9 +40,9 @@ module.exports = {
                 try {
                     const response = await aic(prompt, senderID);
                     api.editMessage(
-                        "[ 𝙲𝙾𝙽𝚅𝙴𝚁𝚂𝙰𝚃𝙸𝙾𝙽𝙰𝙻 𝙰𝙸 ]\n\n" +
+                        "🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n\n" +
                         response +
-                        "\n\n[ 𝚁𝙀𝙋𝙇𝚈 𝚃𝙾 𝚃𝙷𝙸𝚂 𝙼𝙀𝚂𝚂𝙰𝙶𝙴 𝚃𝙾 𝙲𝙾𝙽𝚃𝙸𝙽𝚄𝙴 𝚃𝙷𝙴 𝙲𝙾𝙽𝚅𝙴𝚁𝚂𝙰𝚃𝙸𝙾𝙽 𝚆𝙸𝚃𝙷 𝙰𝙸 ]",
+                        "\n\n[ Reply This Chat to Continue ]",
                         info.messageID
                     );
                     global.handle.replies[info.messageID] = {
