@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 module.exports.config = {
-    name: "geo5",
+    name: "gpt4",
     version: "1.0.0",
     hasPermission: 0,
     credits: "George Nakila",//api by jerome
