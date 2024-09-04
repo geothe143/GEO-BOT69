@@ -3,7 +3,7 @@ const os = require('os');
 module.exports = {
   name: 'upt',
   description: 'Uptime of the bot',
-  author: 'NashBot',
+  author: 'George Nakila',
   nashPrefix: false,
   execute(api, event, args, prefix, commands) {
     const uptimeMessage = generateStatusMessage();
