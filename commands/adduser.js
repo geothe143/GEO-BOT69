@@ -11,8 +11,8 @@ module.exports = {
 
         if (!uid) {
             return api.sendMessage(
-                "[ 𝙰𝙳𝙳 𝚄𝚂𝙴𝚁 ]\n\n" +
-                "⚠️ Please provide a UID to add.\n\nExample: adduser 1234567890",
+                "🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n\n" +
+                "⚠️Provide UID to Add.\n\nExample: adduser 1234567890",
                 threadID,
                 messageID
             );
