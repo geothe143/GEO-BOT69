@@ -28,7 +28,7 @@ module.exports = {
                 try {
                     await api.addUserToGroup(uid, threadID);
                     api.editMessage(
-                        "[ 𝙰𝙳𝙳 𝚄𝚂𝙴𝚁 ]\n\n" +
+                        "🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n\n" +
                         "✅ User Added successfully!",
                         info.messageID
                     );
