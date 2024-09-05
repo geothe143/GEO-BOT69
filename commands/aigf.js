@@ -15,7 +15,7 @@ async function fetchAIGirlfriendResponse(prompt) {
 }
 
 module.exports = {
-    name: "dont",
+    name: "aigf",
     description: "Talk to the AI Girlfriend",
     nashPrefix: false,
     version: "1.0.0",
