@@ -15,7 +15,7 @@ async function fetchAIGirlfriendResponse(prompt) {
 }
 
 module.exports = {
-    name: "aigf",
+    name: "dont",
     description: "Talk to the AI Girlfriend",
     nashPrefix: false,
     version: "1.0.0",
@@ -28,15 +28,15 @@ module.exports = {
         if (!prompt) return api.sendMessage("Please enter a prompt for the AI Girlfriend.", threadID, messageID);
 
         api.sendMessage(
-            "[ 𝙰𝙸 𝙶𝙸𝚁𝙻𝙵𝚁𝙸𝙴𝙽𝙳 ]\n\n" +
-            "⏳ Fetching the response...",
+            "🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n\n" +
+            "💬 Responding...",
             threadID,
             async (err, info) => {
                 if (err) return;
                 try {
                     const response = await fetchAIGirlfriendResponse(prompt);
                     api.editMessage(
-                        "[ 𝙰𝙸 𝙶𝙸𝚁𝙻𝙵𝚁𝙸𝙴𝙽𝙳 ]\n\n" +
+                        "🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n\n" +
                         response,
                         info.messageID
                     );
