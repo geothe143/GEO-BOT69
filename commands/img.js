@@ -2,7 +2,7 @@ const axios = require('axios');
 const fs = require("fs");
 
 module.exports.config = {
-  name: "img",
+  name: "pin",
   version: "1.4",
   hasPermission: 0,
   credits: "George Nakila",
