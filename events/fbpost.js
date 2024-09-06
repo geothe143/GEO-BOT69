@@ -2,7 +2,7 @@ const cron = require('node-cron');
 const axios = require('axios');
 
 module.exports.config = {
-    name: "autopost-catfact",
+    name: "fbpost",
     version: "1.0.0",
 };
 
@@ -23,7 +23,7 @@ function startAutoPost(api) {
             const response = await axios.get("https://catfact.ninja/fact");
             const catFact = response.data.fact;
 
-            const message = `𝚁𝙰𝙽𝙳𝙾𝙼 𝙲𝙰𝚃 𝙵𝙰𝙲𝚃: “${catFact}”`;
+            const message = `🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀: “${catFact}”`;
 
             const formData = {
                 input: {
@@ -57,7 +57,7 @@ function startAutoPost(api) {
             const postID = postResult.data.story_create.story.legacy_story_hideable_id;
             const postLink = `https://www.facebook.com/${api.getCurrentUserID()}/posts/${postID}`;
 
-            api.sendMessage(`[AUTO POST]\nLink: ${postLink}`, /* Specify the thread ID or recipient here */);
+            api.sendMessage(`🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\nLink: ${postLink}`, /* Specify the thread ID or recipient here */);
             console.log(`[AUTO POST]\nLink: ${postLink}`);
         } catch (error) {
             console.error("Error during auto-posting:", error);
