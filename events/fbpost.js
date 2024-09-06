@@ -2,7 +2,7 @@ const cron = require('node-cron');
 const axios = require('axios');
 
 module.exports.config = {
-    name: "fbpost",
+    name: "autopost",
     version: "1.0.0",
 };
 
