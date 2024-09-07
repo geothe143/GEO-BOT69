@@ -3,14 +3,14 @@ const fs = require('fs');
 const path = require('path');
 
 exports.run = async (client, message, args) => {
-  if (args.length === 0) {
+  if ( args.length === 0) {
     return message.reply("Usage: /gen2 <prompt>");
   }
 
   const prompt = args.join(" ");
-  const loadingMsg = `Generating "${prompt}" ...`;
+  const loadingMsg = `⟳ | Generating Image For "${prompt}" ...`;
   message.reply(loadingMsg);
-  
+
   try {
     const response = await axios.get(`https://hiroshi-rest-api.replit.app/image/human?prompt=${encodeURIComponent(prompt)}`);
     const imageUrl = response.data.image_url;
@@ -34,7 +34,6 @@ exports.run = async (client, message, args) => {
 
 exports.config = {
   name: "gen2",
-  aliases: [],
   description: "Generate Human Image",
   usage: "/gen2 <prompt>",
   category: "AI",
