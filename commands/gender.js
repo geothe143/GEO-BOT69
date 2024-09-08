@@ -13,7 +13,7 @@ module.exports = {
             return api.sendMessage('Please provide a name to determine the gender.', event.threadID, event.messageID);
         }
 
-        await api.sendMessage('hindi maka antay ampota HAHAHA', event.threadID);
+        await api.sendMessage('💬 Responding...', event.threadID);
 
         try {
             const response = await axios.get(apiUrl);
@@ -24,7 +24,7 @@ module.exports = {
             }
 
             api.sendMessage({
-                body: `𝗚𝗘𝗡𝗗𝗘𝗥 𝗣𝗥𝗘𝗗𝗜𝗖𝗧𝗜𝗢𝗡\n━━━━━━━━━━━━━━━━━━\n𝗡𝗮𝗺𝗲: ${apiName}\n𝗚𝗲𝗻𝗱𝗲𝗿: ${gender}\n𝗣𝗿𝗼𝗯𝗮𝗯𝗶𝗹𝗶𝘁𝘆: ${(probability * 100).toFixed(2)}%\n𝗖𝗼𝘂𝗻𝘁: ${count}`,
+                body: `🎀 𝗚𝗘𝗡𝗗𝗘𝗥 𝗣𝗥𝗘𝗗𝗜𝗖𝗧 🎀\n━━━━━━━━━━━━━━━━━━\n𝗡𝗮𝗺𝗲: ${apiName}\n𝗚𝗲𝗻𝗱𝗲𝗿: ${gender}\n𝗣𝗿𝗼𝗯𝗮𝗯𝗶𝗹𝗶𝘁𝘆: ${(probability * 100).toFixed(2)}%\n𝗖𝗼𝘂𝗻𝘁: ${count}`,
             }, event.threadID);
         } catch (error) {
             api.sendMessage(`An error occurred: ${error.message}`, event.threadID);
