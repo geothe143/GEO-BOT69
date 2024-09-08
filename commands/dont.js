@@ -10,7 +10,7 @@ module.exports = {
     try {
       const apiUrl = `${global.NashBot.ENDPOINT}hentai-gif`;
 
-      api.sendMessage('Mag antay ka nga manyakol', event.threadID);
+      api.sendMessage('Ayaw kol bata pako kol🥴', event.threadID);
 
       axios.get(apiUrl)
         .then(response => {
