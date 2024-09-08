@@ -17,7 +17,7 @@ module.exports = {
 
     const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-    const message = `•──⋅☾ Motivational Quote ☽⋅──•\n${randomQuote}\n•──⋅☾ Have a great day! ☽⋅──•`;
+    const message = `•──⋅☾ 🎀 𝗚𝗘𝗢 𝗔𝗜69 🎀 ☽⋅──•\n${randomQuote}\n•──⋅☾ Have a great day! ☽⋅──•`;
 
     try {
       api.sendMessage(message, event.threadID);
