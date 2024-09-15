@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 module.exports = {
-    name: 'blackbox',
+    name: 'ai2',
     description: 'Interact with Blackbox Conversational AI',
     cooldown: 3,
     nashPrefix: false,
@@ -24,7 +24,7 @@ module.exports = {
             }
 
             api.sendMessage({
-                body: `𝗕𝗹𝗮𝗰𝗸𝗯𝗼𝘅\n━━━━━━━━━━━━━━━━━━\n𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲:\n${aiResponse}\n━━━━━━━━━━━━━━━━━━\n𝗔𝘀𝗸 𝗠𝗲 𝗔𝗻𝘆𝘁𝗵𝗶𝗻𝗴!`,
+                body: `🎀 𝗚𝗖𝗛𝗔𝗧 𝗕𝗢𝗧 🎀\n━━━━━━━━━━━━━━━━━━\n${aiResponse}\n━━━━━━━━━━━━━━━━━━\n𝗔𝘀𝗸 𝗠𝗲 𝗔𝗻𝘆𝘁𝗵𝗶𝗻𝗴!`,
             }, event.threadID);
         } catch (error) {
             api.sendMessage(`An error occurred: ${error.message}`, event.threadID);
