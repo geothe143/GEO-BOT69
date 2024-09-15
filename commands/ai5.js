@@ -15,7 +15,7 @@ async function fetchMixtralResponse(prompt) {
 }
 
 module.exports = {
-    name: "g3",
+    name: "ai5",
     description: "Talk to G3 AI",
     nashPrefix: false,
     version: "1.0.0",
@@ -25,10 +25,10 @@ module.exports = {
     execute(api, event, args, prefix) {
         const { threadID, messageID } = event;
         let prompt = args.join(" ");
-        if (!prompt) return api.sendMessage("Please enter a prompt for the Mixtral AI.", threadID, messageID);
+        if (!prompt) return api.sendMessage("Please enter a prompt for the AI.", threadID, messageID);
 
         api.sendMessage(
-            "🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n\n" +
+            "🎀 𝗚𝗖𝗛𝗔𝗧 𝗕𝗢𝗧 🎀\n\n" +
             "💬 Responding...",
             threadID,
             async (err, info) => {
@@ -36,7 +36,7 @@ module.exports = {
                 try {
                     const response = await fetchMixtralResponse(prompt);
                     api.editMessage(
-                        "🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n\n" +
+                        "🎀 𝗚𝗖𝗛𝗔𝗧 𝗕𝗢𝗧 🎀\n\n" +
                         response,
                         info.messageID
                     );
