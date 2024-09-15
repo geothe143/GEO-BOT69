@@ -15,7 +15,7 @@ async function fetchMixtralResponse(prompt) {
 }
 
 module.exports = {
-    name: "ai5",
+    name: "ai4",
     description: "Talk to G3 AI",
     nashPrefix: false,
     version: "1.0.0",
