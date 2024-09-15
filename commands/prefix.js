@@ -6,7 +6,7 @@ module.exports = {
   nashPrefix: false,
   execute(api, event, args, prefix) {
     try {
-      const message = `🎀𝗚𝗖𝗕𝗢𝗧🎀, prefix is [ 𓆩 '${prefix}' 𓆪 ]\n\n𝗦𝗢𝗠𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 𝗧𝗛𝗔𝗧 𝗠𝗔𝗬 𝗛𝗘𝗟𝗣 𝗬𝗢𝗨:\n➥ '${prefix}help [command] -> information and usage of command\n\nHave fun using it, enjoy! ❤`;
+      const message = `🎀 𝗚𝗖𝗛𝗔𝗧 𝗕𝗢𝗧 🎀\n━━━━━━━━━━━━━━━━━━\nPrefix: [ 𓆩 '${prefix}' 𓆪 ]\n\n𝗦𝗢𝗠𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 𝗧𝗛𝗔𝗧 𝗠𝗔𝗬 𝗛𝗘𝗟𝗣 𝗬𝗢𝗨:\n➥ '${prefix}help [command] -> information and usage of command\n\nHave fun using it, enjoy! ❤`;
       
       const imagePath = './josh.jpeg';
 
