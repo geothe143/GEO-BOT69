@@ -26,7 +26,7 @@ module.exports = {
         const { threadID, messageID, senderID } = event;
         const message = args.join(" ");
 
-        if (!message) return api.sendMessage("Please provide your question.\n\nExample: G4 What is the solar system?", threadID, messageID);
+        if (!message) return api.sendMessage("Please provide your question.\n\nExample: ai pogi ba si George Nakila?", threadID, messageID);
 
         api.sendMessage(
             "💬 Responding...",
