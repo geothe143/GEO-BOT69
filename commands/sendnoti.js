@@ -25,7 +25,7 @@ module.exports = {
       if (thread.isGroup && thread.threadID !== event.threadID) {
         try {
           await api.sendMessage(
-            `➜ 𝗙𝗥𝗢𝗠 𝗔𝗗𝗠𝗜𝗡\n\n➜ ${customMessage}\n\nAutoBotDev: https://www.facebook.com/geotechph.net`,
+            `🎀 𝗚𝗖𝗛𝗔𝗧 𝗕𝗢𝗧 🎀\n\n➜ ${customMessage}\n\nAutoBotDev: https://www.facebook.com/geotechph.net`,
             thread.threadID
           );
           sentCount++;
