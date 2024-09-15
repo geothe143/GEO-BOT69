@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 module.exports = {
-    name: 'ai2',
+    name: 'ai3',
     description: 'Interact with Blackbox Conversational AI',
     cooldown: 3,
     nashPrefix: false,
