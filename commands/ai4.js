@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 module.exports = {
-    name: 'g1',
+    name: 'ai4',
     description: 'Interact with GPT-3.5 Turbo',
     cooldown: 3,
     nashPrefix: false,
@@ -24,7 +24,7 @@ module.exports = {
             }
 
             api.sendMessage(
-                `🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n━━━━━━━━━━━━━━━━━━━\n${result}`,
+                `🎀 𝗚𝗖𝗛𝗔𝗧 𝗕𝗢𝗧 🎀\n━━━━━━━━━━━━━━━━━━━\n${result}`,
                 event.threadID,
                 event.messageID
             );
