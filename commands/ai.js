@@ -21,7 +21,7 @@ module.exports = {
     nashPrefix: false,
     version: "1.0.0",
     role: 0,
-    cooldowns: 5,
+    cooldowns: 1,
     async execute(api, event, args) {
         const { threadID, messageID, senderID } = event;
         const message = args.join(" ");
