@@ -36,7 +36,7 @@ module.exports = {
                 try {
                     const response = await fetchMixtralResponse(prompt);
                     api.editMessage(
-                        "🎀 𝗚𝗖𝗛𝗔𝗧 𝗕𝗢𝗧 🎀\n\n" +
+                        "🎀 𝗚𝗖𝗛𝗔𝗧 𝗕𝗢𝗧 🎀\n━━━━━━━━━━━━━━━━━━\n" +
                         response,
                         info.messageID
                     );
