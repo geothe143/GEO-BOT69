@@ -1,62 +1,37 @@
-const axios = require("axios");
-
-async function aic(q, uid) {
-    try {
-        const response = await axios.get(`${global.NashBot.END}gpt4?prompt=${encodeURIComponent(q)}&uid=${uid}`);
-        return response.data.gpt4;
-    } catch (error) {
-        console.error("Error fetching data:", error.message);
-        return "Failed to fetch data. Please try again later.";
-    }
-}
+const axios = require('axios');
 
 module.exports = {
     name: "ai2",
-    description: "Talk to GPT4 (conversational)",
-    nashPrefix: false,
-    version: "1.0.2",
-    role: 0,
-    cooldowns: 5,
-    aliases: ["ai"],
-    execute(api, event, args, prefix) {
-        const { threadID, messageID, senderID } = event;
-        let prompt = args.join(" ");
-        if (!prompt) return api.sendMessage("Please enter a prompt.", threadID, messageID);
-        
-        if (!global.handle) {
-            global.handle = {};
-        }
-        if (!global.handle.replies) {
-            global.handle.replies = {};
+    credits: "GeoDevz69",
+    description: "Interact with Gemini",
+    nashPrefix: true,
+    version: "1.0.0",
+    aliases: ["gemini"],
+    usage: "gemini [reply to photo]",
+    execute: async function ({ api, event, args }) {
+        const prompt = args.join(" ");
+
+        if (!prompt) {
+            return api.sendMessage('This command only works with a photo reply.', event.threadID, event.messageID);
         }
 
-        api.sendMessage(
-            "🎀 𝗚𝗖𝗛𝗔𝗧 𝗕𝗢𝗧 🎀\n\n" +
-            "💬 Responding..." +
-            '\n\n[ Type "Clear" to reset conversation ]',
-            threadID,
-            async (err, info) => {
-                if (err) return;
-                try {
-                    const response = await aic(prompt, senderID);
-                    api.editMessage(
-                        "🎀 𝗚𝗖𝗛𝗔𝗧 𝗕𝗢𝗧 🎀\n━━━━━━━━━━━━━━━━━━\n💕 ғʀᴏᴍ: ᴀᴅᴍɪɴ ɢᴇᴏʀᴀʏ 💕\n" +
-                        response +
-                        "\n\n[ Reply This Chat to Continue ]",
-                        info.messageID
-                    );
-                    global.handle.replies[info.messageID] = {
-                        cmdname: module.exports.name,
-                        this_mid: info.messageID,
-                        this_tid: info.threadID,
-                        tid: threadID,
-                        mid: messageID,
-                    };
-                } catch (g) {
-                    api.sendMessage("Error processing your request: " + g.message, threadID);
-                }
-            },
-            messageID
-        );
-    },
+        const url = encodeURIComponent(event.messageReply.attachments[0].url);
+        api.sendTypingIndicator(event.threadID);
+
+        try {
+            await api.sendMessage('Responding...', event.threadID);
+
+            const response = await axios.get(`${global.NashBot.END}gemini?prompt=${encodeURIComponent(prompt)}&url=${url}`);
+            const description = response.data.gemini;
+
+            return api.sendMessage(
+                `GCHAT BOT\n━━━━━━━━━━━━━━━━━\n${description}\n━━━━━━━━━━━━━━━━━\nOwner: George Nakila\n\nUse 'ai' to answer only on text questions.`,
+                event.threadID,
+                event.messageID
+            );
+        } catch (error) {
+            console.error(error);
+            return api.sendMessage('An error occurred while processing your request.', event.threadID, event.messageID);
+        }
+    }
 };
