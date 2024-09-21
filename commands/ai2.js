@@ -12,20 +12,20 @@ module.exports = {
         const prompt = args.join(" ");
 
         if (!prompt) {
-            return api.sendMessage('This command only works with a photo reply.', event.threadID, event.messageID);
+            return api.sendMessage('⚠️ This command only works with a photo reply.', event.threadID, event.messageID);
         }
 
         const url = encodeURIComponent(event.messageReply.attachments[0].url);
         api.sendTypingIndicator(event.threadID);
 
         try {
-            await api.sendMessage('Responding...', event.threadID);
+            await api.sendMessage('💬 Responding...', event.threadID);
 
             const response = await axios.get(`${global.NashBot.END}gemini?prompt=${encodeURIComponent(prompt)}&url=${url}`);
             const description = response.data.gemini;
 
             return api.sendMessage(
-                `GCHAT BOT\n━━━━━━━━━━━━━━━━━\n${description}\n━━━━━━━━━━━━━━━━━\nOwner: George Nakila\n\nUse 'ai' to answer only on text questions.`,
+                `🎀 𝗚𝗖𝗛𝗔𝗧 𝗕𝗢𝗧 🎀\n━━━━━━━━━━━━━━━━━\n${description}\n━━━━━━━━━━━━━━━━━\n💕 ғʀᴏᴍ: ᴀᴅᴍɪɴ ɢᴇᴏʀᴀʏ 💕\n\nUse 'ai' to answer only on text questions.`,
                 event.threadID,
                 event.messageID
             );
