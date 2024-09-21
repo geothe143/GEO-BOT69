@@ -16,7 +16,7 @@ async function gptConvoAPI(ask, id) {
 }
 
 module.exports = {
-    name: "ai",
+    name: "ai3",
     description: "Interact with GPT-3 conversational AI",
     nashPrefix: false,
     version: "1.0.0",
