@@ -24,7 +24,7 @@ function generateStatusMessage() {
   const osPlatform = os.platform();
   const cpuArchitecture = os.arch();
 
-  return `🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀 has been working for ${hours} hour(s) ${minutes} minute(s) ${seconds} second(s).\n\n` +
+  return `🎀 𝗚𝗘𝗢 𝗧𝗘𝗖𝗛 𝗔𝗜69 🎀\n━━━━━━━━━━━━━━━━━━\n\nhas been working for ${hours} hour(s) ${minutes} minute(s) ${seconds} second(s).━━━━━━━━━━━━━━━━━━\n💕 ғʀᴏᴍ: ᴀᴅᴍɪɴ ɢᴇᴏʀᴀʏ 💕\n` +
     `❖ Cpu usage: ${cpuUsage}%\n` +
     `❖ RAM usage: ${ramUsage} MB\n` +
     `❖ Cores: ${cores}\n` +
