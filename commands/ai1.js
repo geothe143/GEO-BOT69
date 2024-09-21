@@ -6,7 +6,7 @@ module.exports = {
     description: "GPT architecture",
     nashPrefix: false,
     version: "1.0.0",
-    aliases: [ai1],
+    aliases: ["ai1"],
     usage: "ai [text query]",
     execute: async function ({ api, event, args }) {
         try {
