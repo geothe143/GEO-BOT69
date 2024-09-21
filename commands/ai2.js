@@ -40,7 +40,7 @@ module.exports = {
                 try {
                     const response = await aic(prompt, senderID);
                     api.editMessage(
-                        "🎀 𝗚𝗖𝗛𝗔𝗧 𝗕𝗢𝗧 🎀\n\n" +
+                        "🎀 𝗚𝗖𝗛𝗔𝗧 𝗕𝗢𝗧 🎀\n━━━━━━━━━━━━━━━━━━\n💕 ғʀᴏᴍ: ᴀᴅᴍɪɴ ɢᴇᴏʀᴀʏ 💕\n" +
                         response +
                         "\n\n[ Reply This Chat to Continue ]",
                         info.messageID
